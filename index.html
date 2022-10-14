@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cardholder</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <section>
+      <img src="/images/bg-card-front.png" class="front" alt="" />
+      <img src="/images/bg-card-back.png" class="back" alt="" />
+    </section>
+    <form>
+      <label for="fname"><b>CARDHOLDER NAME</b></label
+      ><br />
+      <input
+        type="text"
+        id="fname"
+        value="e.g. Jane Appleseed"
+        class="jane"
+      /><br />
+      <label for="sname"><b>CARD NUMBER</b></label
+      ><br />
+      <input
+        type="text"
+        id="sname"
+        value="e.g. 123456789 123 0000"
+        class="card"
+      /><br />
+      <label for="mname">EXP . DATE (MM/YY) <span>CVC</span></label><br />
+      <input type="date" id="mname" value="mm" class="month" />
+      <input type="date" id="mname" value="year" class="year" />
+      <input type="text" id="mname" value="e.g. 123" class="num"><br>
+      <button>Confirm</button>
+    </form>
+  </body>
+</html>
