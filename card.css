@@ -1,70 +1,132 @@
-*{
- margin: 0;
- padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+.desk {
+    display: flex;
+  height: 1000px;
+}
+.mobile {
+    display: none;
 }
 body {
-    background-image: url(/images/bg-main-desktop.png);
- background-repeat: no-repeat;
- background-size: 600px;
- font-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  font-size: 100%;
+  overflow-y: hidde;
 }
- .front {
-     display: flex;
-    justify-content: flex-start;
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-bottom: 50px;
+.front {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -800px;
+  margin-left: 200px;
+  margin-bottom: 50px;
 }
 .back {
-    display: flex;
-    justify-content: flex-start;
-      margin-left: 300px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 300px;
 }
 form {
-margin-left: 900px;
-margin-top: -500px;
+  margin-left: 900px;
+  margin-top: -430px;
 }
 input {
-    opacity: 0.5;
-    font-family: courier;
-    font-weight: bold;
-    height: 45px;
-    width: 24em;
-    padding-left: 15px;
-    border-radius: 7px;
-    font-size: large;
+  opacity: 0.5;
+  font-family: courier;
+  font-weight: bold;
+  height: 45px;
+  width: 24em;
+  padding-left: 15px;
+  border-radius: 7px;
+  font-size: large;
 }
 label {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .jane {
-    margin: 15px;
+  margin: 15px;
 }
 .card {
-    margin: 15px;
+  margin: 15px;
 }
 .month {
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 65px;
+  margin-top: 5px;
+  margin-left: 15px;
+  width: 65px;
 }
 .year {
-    margin-left: 15px;
-    width: 65px;
+  margin-left: 15px;
+  width: 65px;
 }
 span {
-    margin-left: 65px;
+  margin-left: 65px;
 }
 .num {
-    width: 175px;
-    margin-left: 15px;
+  width: 175px;
+  margin-left: 15px;
 }
 button {
-    margin-left: 15px;
-    margin-top: 30px;
-    padding: 15px 9.5em;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
+  margin-left: 15px;
+  margin-top: 30px;
+  padding: 15px 9.5em;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.third {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .front {
+        display: none;
+    }
+    .back {
+    margin-left: 45px;
+    width: 250px;
+    margin-top: -170px;
+    }
+    .desk {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        width: 320px;
+    }
+    form {
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+    main {
+        overflow-x: hidden;
+    }
+    input {
+        width: 250px;
+    }
+    button {
+     padding: 5px 45px;   
+     margin-left: 0px;
+    }
+    span {
+        margin-left: 0px;
+    }
+    .third {
+        display: flex;
+        width: 250px;
+        margin-top: -50px;
+        margin-left: 15px;
+    }
+    .num {
+        width: 60px
+    }
+    button {
+        padding: 20px 50px;
+        margin-left: 15px;
+        width: 290px;
+        margin-bottom: 15px;
+    }
 }
