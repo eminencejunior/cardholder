@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: 600px;
   font-size: 100%;
-  overflow-y: hidde;
+  overflow-y: hidden;
 }
 .front {
   display: flex;
