@@ -4,7 +4,7 @@
 }
 .desk {
     display: flex;
-  height: 1000px;
+  height: 780px;
 }
 .mobile {
     display: none;
@@ -13,12 +13,11 @@ body {
   background-repeat: no-repeat;
   background-size: 600px;
   font-size: 100%;
-  overflow-y: hidden;
 }
 .front {
   display: flex;
   justify-content: flex-start;
-  margin-top: -800px;
+  margin-top: -700px;
   margin-left: 200px;
   margin-bottom: 50px;
 }
@@ -80,7 +79,7 @@ button {
 }
 @media screen and (max-width: 600px) {
     body {
-        overflow-x: hidden;
+      
     }
     .front {
         display: none;
@@ -95,7 +94,7 @@ button {
     }
     .mobile {
         display: flex;
-        width: 370px;
+        width: 390px;
     }
     form {
         margin-top: 70px;
