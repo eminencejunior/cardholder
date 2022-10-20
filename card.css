@@ -159,6 +159,13 @@ button {
           color: white;
           font-family: tahoma;
         }
+       a {
+        position: absolute;
+        text-decoration: none;
+        margin-left: 20px;
+        color: white;
+    
+       }
     .third {
         display: flex;
         position: relative;
